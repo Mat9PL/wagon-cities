@@ -1,8 +1,4 @@
-import React from 'react';
-import CityList from '../containers/city_list';
-import ActiveCity from '../containers/active_city';
-
-const cities = [
+export default [
   { name: "Paris", address: "16 Villa Gaudelet, 75011 Paris", slug: "paris" },
   { name: "London", address: "14-22 Elder St, London E1 6BT", slug: "london" },
   { name: "Berlin", address: "Rudi-Dutschke-Straße 26, 10969 Berlin", slug: "berlin" },
@@ -28,16 +24,3 @@ const cities = [
   { name: "Lille", address: "2 Avenue des Saules, 59000 Lille", slug: "lille" },
   { name: "Lyon", address: "23 Rue Paul Montrochet, 69002 Lyon", slug: "lyon" }
 ];
-
-const App = () => {
-  const selectedCity = cities[5];
-
-  return (
-    <div className="app">
-      <CityList cities={cities} />
-      <ActiveCity city={selectedCity} />
-    </div>
-  );
-};
-
-export default App;
